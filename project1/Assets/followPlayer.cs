@@ -28,6 +28,9 @@ public class followPlayer : MonoBehaviour {
         yaw += speedH * Input.GetAxis("Mouse X");
         pitch -= speedV * Input.GetAxis("Mouse Y");
 
+        //yaw = Mathf.Clamp(yaw, -90f, 90f);
+        pitch = Mathf.Clamp(pitch, -60f, 90f);
+
         transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
         //transform.rotation = player.transform.rotation;
         
@@ -38,8 +41,10 @@ public class followPlayer : MonoBehaviour {
         Quaternion rotation = Quaternion.Euler(0, desiredAngle, 0);
         transform.position = player.transform.position - (rotation * offset);
 
+       
+
         //transform.LookAt(player.transform);
-        
+
     }
 
 }

@@ -21,12 +21,10 @@ public class Combat : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(0))
         {
-
-        if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, rayLength))
+            if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, rayLength))
             {
                 Debug.Log("We hit" + hit.collider.name + " " + hit.point);
             }
-
            
         }
 		

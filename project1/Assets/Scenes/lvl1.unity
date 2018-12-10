@@ -537,7 +537,7 @@ MonoBehaviour:
   rb: {fileID: 969228507}
   movementForce: 750
   moveSpeed: 3
-  shiftSpeed: 12
+  shiftSpeed: 6
   currentSpeed: 0
   jumpForce: 7
   speedH: 2
