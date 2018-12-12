@@ -19,10 +19,10 @@ public class Combat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, rayLength))
-            {
+        if (Input.GetMouseButtonDown(0)) {
+
+            if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, rayLength)) {
+
                 Debug.Log("We hit" + hit.collider.name + " " + hit.point);
             }
            
