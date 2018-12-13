@@ -11,7 +11,7 @@ public class playerMovement : MonoBehaviour {
     public float shiftSpeed = 300.0f;
     public float currentSpeed;
     public float jumpForce = 7f;
-    bool isgrounded = true;
+    public bool isgrounded = true;
 
     public float speedH = 2.0f;
     public float speedV = 2.0f;
@@ -43,7 +43,10 @@ public class playerMovement : MonoBehaviour {
         transform.Translate(x1, 0, 0);
         transform.Translate(0, 0, z1);
 
-
+        if (Input.GetKeyDown("q"))
+        {
+            Debug.Log(isgrounded);
+        }
 
         //Making player jump
 
@@ -91,7 +94,7 @@ public class playerMovement : MonoBehaviour {
     }
     void OnCollisionExit(Collision theCollision)
     {
-        if (theCollision.gameObject.name != "floor")
+        if (theCollision.gameObject.name == "Ground")
         {
             isgrounded = false;
         }

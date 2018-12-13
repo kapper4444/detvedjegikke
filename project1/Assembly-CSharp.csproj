@@ -57,6 +57,7 @@
      <Compile Include="Assets\enemyController.cs" />
      <Compile Include="Assets\followPlayer.cs" />
      <Compile Include="Assets\locak.cs" />
+     <Compile Include="Assets\PlayerManager.cs" />
      <Compile Include="Assets\playerMovement.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/kaspe/Documents/GitHub/detvedjegikke/project1/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

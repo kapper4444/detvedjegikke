@@ -13,6 +13,7 @@ public class enemyController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        target = PlayerManager.instance.player.transform;
         agentE = GetComponent<NavMeshAgent>();
 		
 	}
@@ -20,6 +21,8 @@ public class enemyController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+
+
 	}
 
     void OnDrawGizmosSelected () {
