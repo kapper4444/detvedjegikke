@@ -23,7 +23,7 @@ public class Combat : MonoBehaviour {
 
             if (Physics.Raycast(cam.transform.position, cam.transform.TransformDirection(Vector3.forward), out hit, rayLength)) {
 
-                Debug.Log("We hit" + hit.collider.name + " " + hit.point);
+                Debug.Log("We hit " + hit.collider.name + " " + hit.point);
             }
            
         }
