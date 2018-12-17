@@ -588,9 +588,10 @@ GameObject:
   - component: {fileID: 969228506}
   - component: {fileID: 969228509}
   - component: {fileID: 969228510}
+  - component: {fileID: 969228511}
   m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_Name: playerOne
+  m_TagString: playerOne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -609,10 +610,11 @@ MonoBehaviour:
   rb: {fileID: 969228507}
   movementForce: 750
   moveSpeed: 3
-  shiftSpeed: 6
+  shiftSpeed: 7
   currentSpeed: 0
   jumpForce: 7
   isgrounded: 1
+  playerRun: 0
   speedH: 2
   speedV: 2
 --- !u!54 &969228507
@@ -672,6 +674,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   irange: 5
+--- !u!114 &969228511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 969228505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ee0378e761978a48b5872275b88d794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bools: {fileID: 0}
+  stamina: 25
+  maxStamina: 25
 --- !u!1 &1320087924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1035,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.2
-  m_Speed: 2
+  m_Speed: 4
   m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120

@@ -12,6 +12,7 @@ public class playerMovement : MonoBehaviour {
     public float currentSpeed;
     public float jumpForce = 7f;
     public bool isgrounded = true;
+    public bool playerRun = false;
 
     public float speedH = 2.0f;
     public float speedV = 2.0f;
@@ -63,20 +64,17 @@ public class playerMovement : MonoBehaviour {
 
 
         //This makes the player sprint
-        if (Input.GetKeyDown("left shift"))
-        {
 
+        if (playerRun == true && Input.GetKeyDown("left shift"))
+        {
             currentSpeed = moveSpeed;
             moveSpeed = shiftSpeed;
-
-
         }
-        if (Input.GetKeyUp("left shift"))
+        if (playerRun == false && Input.GetKeyUp("left shift"))
         {
-
             moveSpeed = currentSpeed;
-
         }
+
         
         yaw += speedH * Input.GetAxis("Mouse X");
         pitch -= speedV * Input.GetAxis("Mouse Y");
