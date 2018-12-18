@@ -8,11 +8,15 @@ public class PlayerStats : MonoBehaviour {
 
     public float stamina = 25f;
     public float maxStamina = 25f;
+    public float mana = 30f;
+    public float maxMana = 30f;
 
     private float staminaRegenTimer = 0.0f;
+    private float manaRegenTimer = 0.0f;
 
     private const float staminaDecrease = 5f;
     private const float staminaIncrease = 2.5f;
+    private const float manaIncrease = 3f;
     private const float timeToRegen = 3f;
 
 	// Use this for initialization

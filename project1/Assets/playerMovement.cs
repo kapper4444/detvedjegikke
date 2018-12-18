@@ -44,10 +44,6 @@ public class playerMovement : MonoBehaviour {
         transform.Translate(x1, 0, 0);
         transform.Translate(0, 0, z1);
 
-        if (Input.GetKeyDown("q"))
-        {
-            Debug.Log(isgrounded);
-        }
 
         //Making player jump
 
@@ -65,14 +61,16 @@ public class playerMovement : MonoBehaviour {
 
         //This makes the player sprint
 
-        if (playerRun == true && Input.GetKeyDown("left shift"))
+        if (/*playerRun == true &&*/ Input.GetKeyDown("left shift"))
         {
             currentSpeed = moveSpeed;
             moveSpeed = shiftSpeed;
+            Debug.Log("You Are in the if statement");
         }
         if (playerRun == false && Input.GetKeyUp("left shift"))
         {
             moveSpeed = currentSpeed;
+            Debug.Log("You are also here");
         }
 
         
