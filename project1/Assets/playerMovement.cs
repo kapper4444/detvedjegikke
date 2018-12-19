@@ -28,10 +28,6 @@ public class playerMovement : MonoBehaviour {
     {
         rb = GetComponent<Rigidbody>();
 
-
-
-        //col = GetComponent<BoxCollider>();
-
     }
 
     void Update()
@@ -43,7 +39,6 @@ public class playerMovement : MonoBehaviour {
 
         transform.Translate(x1, 0, 0);
         transform.Translate(0, 0, z1);
-
 
         //Making player jump
 

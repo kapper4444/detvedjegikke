@@ -6,6 +6,10 @@ public class PlayerStats : MonoBehaviour {
 
     public playerMovement bools;
 
+    private Transform cashedTransform;
+    public Vector3 position;
+    public Vector3 position2;
+
     public float stamina = 25f;
     public float maxStamina = 25f;
     public float mana = 30f;
@@ -27,19 +31,27 @@ public class PlayerStats : MonoBehaviour {
         GameObject g = GameObject.FindGameObjectWithTag("playerOne");
 
         bools = g.GetComponent<playerMovement>();
+
+        position = PlayerManager.instance.player.transform.position;
 	    
 	}
 
     // Update is called once per frame
     void Update() {
+    position2 = PlayerManager.instance.player.transform.position;
 
         //Changes the value of the bool named playerRun in the script "playerMovement"
         if (Input.GetKeyDown("left shift"))
         {
+           
 
-            bools.playerRun = true;
+            if (position2 != position)
+            {
+                bools.playerRun = true;
+                position = position2;
 
-
+            }
+        
         }
         if (Input.GetKeyUp("left shift")|| stamina == 0)
         {
@@ -51,9 +63,9 @@ public class PlayerStats : MonoBehaviour {
 
         //Check if shift is being hold down if it is decrease stamina
         //and afterward regenrate stamina
-        bool isRunning = Input.GetKey(KeyCode.LeftShift);
+        //bool isRunning = Input.GetKey(KeyCode.LeftShift);
         
-        if (isRunning)
+        if (bools.playerRun)
         {
             stamina = Mathf.Clamp(stamina - (staminaDecrease * Time.deltaTime), 0.0f, maxStamina);
 
