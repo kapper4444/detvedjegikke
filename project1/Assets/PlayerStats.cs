@@ -33,7 +33,8 @@ public class PlayerStats : MonoBehaviour {
         bools = g.GetComponent<playerMovement>();
 
         position = PlayerManager.instance.player.transform.position;
-	    
+
+	
 	}
 
     // Update is called once per frame
@@ -45,7 +46,7 @@ public class PlayerStats : MonoBehaviour {
         {
            
 
-            if (position2 != position)
+            if (Input.GetKeyDown("w")||Input.GetKeyDown("a")||Input.GetKeyDown("s")||Input.GetKeyDown("d"))
             {
                 bools.playerRun = true;
                 position = position2;
@@ -53,7 +54,7 @@ public class PlayerStats : MonoBehaviour {
             }
         
         }
-        if (Input.GetKeyUp("left shift")|| stamina == 0)
+        else if (Input.GetKeyUp("left shift")|| stamina == 0)
         {
 
             bools.playerRun = false;

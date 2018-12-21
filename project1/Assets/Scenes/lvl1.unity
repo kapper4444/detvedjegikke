@@ -720,8 +720,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bools: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
+  position2: {x: 0, y: 0, z: 0}
   stamina: 25
   maxStamina: 25
+  mana: 30
+  maxMana: 30
 --- !u!1 &1320087924
 GameObject:
   m_ObjectHideFlags: 0

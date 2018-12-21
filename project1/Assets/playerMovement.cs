@@ -32,7 +32,7 @@ public class playerMovement : MonoBehaviour {
 
     void Update()
     {
-
+        
         //This makes the player move forward, left and so on
         var x1 = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
         var z1 = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
