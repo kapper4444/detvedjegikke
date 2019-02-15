@@ -5,7 +5,7 @@ using UnityEngine;
 public class magicBall : MonoBehaviour
 {
     public float speed = 20;
-    public int damage = 20;
+    int damage = 5;
     public Rigidbody rb;
 
     // Start is called before the first frame update
@@ -13,6 +13,7 @@ public class magicBall : MonoBehaviour
     {
         rb.velocity = transform.forward * speed;
     }
+
 
     private void OnTriggerEnter(Collider hitInfo)
     {

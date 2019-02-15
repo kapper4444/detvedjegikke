@@ -6,20 +6,22 @@ public class Combat : MonoBehaviour {
 
     public Transform firePoint;
     public GameObject magicBallPrefab;
+    private float timer;
+    GameObject clone;
 
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetMouseButtonDown(0))
         {
             shoot();
         }
 
+        Destroy(clone.gameObject, 2f);
     }
 
     void shoot()
-    {
-        Instantiate(magicBallPrefab, firePoint.position, firePoint.rotation);
+    {   
+        clone = Instantiate(magicBallPrefab, firePoint.position, firePoint.rotation);
     }
 }
