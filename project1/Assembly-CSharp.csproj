@@ -57,7 +57,7 @@
      <Compile Include="Assets\enemyController.cs" />
      <Compile Include="Assets\followPlayer.cs" />
      <Compile Include="Assets\locak.cs" />
-     <Compile Include="Assets\Magic.cs" />
+     <Compile Include="Assets\MagicBall.cs" />
      <Compile Include="Assets\PlayerManager.cs" />
      <Compile Include="Assets\playerMovement.cs" />
      <Compile Include="Assets\PlayerStats.cs" />

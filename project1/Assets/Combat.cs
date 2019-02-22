@@ -17,7 +17,7 @@ public class Combat : MonoBehaviour {
             shoot();
         }
 
-        Destroy(clone.gameObject, 2f);
+
     }
 
     void shoot()
