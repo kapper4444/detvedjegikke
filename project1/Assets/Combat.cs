@@ -17,7 +17,10 @@ public class Combat : MonoBehaviour {
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of b5fdcd8... dkd
 =======
 >>>>>>> parent of b5fdcd8... dkd
     }
