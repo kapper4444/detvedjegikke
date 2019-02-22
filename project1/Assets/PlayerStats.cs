@@ -42,16 +42,16 @@ public class PlayerStats : MonoBehaviour {
     position2 = PlayerManager.instance.player.transform.position;
 
         //Changes the value of the bool named playerRun in the script "playerMovement"
-        if (Input.GetKeyDown("left shift") && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
+        if (Input.GetKeyDown("left shift"))
         {
-            bools.playerRun = true;
+           
+
+            if (Input.GetKeyDown("w")||Input.GetKeyDown("a")||Input.GetKeyDown("s")||Input.GetKeyDown("d"))
+            {
+                bools.playerRun = true;
                 position = position2;
 
-            //if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
-            //{
-               
-
-            //}
+            }
         
         }
         else if (Input.GetKeyUp("left shift")|| stamina == 0)
