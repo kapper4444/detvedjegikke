@@ -45,8 +45,13 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1920
     height: 997
+=======
+    width: 1536
+    height: 781
+>>>>>>> parent of b5fdcd8... dkd
 =======
     width: 1536
     height: 781
@@ -121,6 +126,7 @@ MonoBehaviour:
     y: 30
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 1920
     height: 947
   m_MinSize: {x: 885, y: 498}
@@ -130,6 +136,8 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of b5fdcd8... dkd
+=======
+>>>>>>> parent of b5fdcd8... dkd
     width: 1536
     height: 731
   m_MinSize: {x: 887, y: 498}
@@ -137,6 +145,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 469
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of b5fdcd8... dkd
+=======
 >>>>>>> parent of b5fdcd8... dkd
 =======
 >>>>>>> parent of b5fdcd8... dkd
@@ -166,7 +177,11 @@ MonoBehaviour:
   vertical: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 117
+=======
+  controlID: 470
+>>>>>>> parent of b5fdcd8... dkd
 =======
   controlID: 470
 >>>>>>> parent of b5fdcd8... dkd
@@ -200,7 +215,11 @@ MonoBehaviour:
   vertical: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 118
+=======
+  controlID: 471
+>>>>>>> parent of b5fdcd8... dkd
 =======
   controlID: 471
 >>>>>>> parent of b5fdcd8... dkd
@@ -278,11 +297,14 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 727
     height: 640
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 =======
+=======
+>>>>>>> parent of b5fdcd8... dkd
 =======
 >>>>>>> parent of b5fdcd8... dkd
     width: 538
@@ -341,11 +363,14 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 314
     height: 947
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
 =======
+=======
+>>>>>>> parent of b5fdcd8... dkd
 =======
 >>>>>>> parent of b5fdcd8... dkd
     width: 343
@@ -470,9 +495,12 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: d2fbffff
       m_LastClickedID: -1070
 =======
+=======
+>>>>>>> parent of b5fdcd8... dkd
 =======
 >>>>>>> parent of b5fdcd8... dkd
       m_SelectedIDs: 
@@ -663,7 +691,11 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000022260000ce260000
+=======
+    m_ExpandedIDs: 0000000020260000cc26000000ca9a3b
+>>>>>>> parent of b5fdcd8... dkd
 =======
     m_ExpandedIDs: 0000000020260000cc26000000ca9a3b
 >>>>>>> parent of b5fdcd8... dkd
