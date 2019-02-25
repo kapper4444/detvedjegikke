@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Combat : MonoBehaviour {
 
+<<<<<<< HEAD
     Camera cam;
     Vector3 rayOrigin = new Vector3(0.5f, 0.5f, 0);
     public LayerMask mask;
@@ -31,6 +32,25 @@ public class Combat : MonoBehaviour {
 =======
 >>>>>>> parent of b5fdcd8... dkd
 =======
+>>>>>>> parent of b5fdcd8... dkd
+=======
+    public Transform firePoint;
+    public GameObject magicBallPrefab;
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            shoot();
+        }
+
+    }
+
+    void shoot()
+    {
+        Instantiate(magicBallPrefab, firePoint.position, firePoint.rotation);
 >>>>>>> parent of b5fdcd8... dkd
     }
 =======

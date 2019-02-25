@@ -42,8 +42,9 @@ public class PlayerStats : MonoBehaviour {
     position2 = PlayerManager.instance.player.transform.position;
 
         //Changes the value of the bool named playerRun in the script "playerMovement"
-        if (Input.GetKeyDown("left shift"))
+        if (Input.GetKeyDown("left shift") && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
         {
+<<<<<<< HEAD
            
 
             if (Input.GetKeyDown("w")||Input.GetKeyDown("a")||Input.GetKeyDown("s")||Input.GetKeyDown("d"))
@@ -52,6 +53,16 @@ public class PlayerStats : MonoBehaviour {
                 position = position2;
 
             }
+=======
+            bools.playerRun = true;
+                position = position2;
+
+            //if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            //{
+               
+
+            //}
+>>>>>>> parent of b5fdcd8... dkd
         
         }
         else if (Input.GetKeyUp("left shift")|| stamina == 0)
